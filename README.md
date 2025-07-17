@@ -1,2 +1,2 @@
 # rishijha.art
-art
+artist portfolio website
