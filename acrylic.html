@@ -1,5 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+  <style>
+  .lightbox-img {
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+  }
+
+  .lightbox-modal img {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+  }
+
+  .lightbox-close {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .lightbox-close:hover {
+    color: #bbb;
+  }
+</style>
+
+<script>
+  function openLightbox(src) {
+    document.getElementById("lightbox-img").src = src;
+    document.getElementById("lightbox").style.display = "block";
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
+
 <head>
   <meta charset="UTF-8">
   <title>Acrylic Paintings - Rishi Jha</title>
